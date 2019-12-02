@@ -5,8 +5,9 @@ public class Example1 {
         String town = method.inputTown();
         int age = method.inputAge();
         String hobby = method.inputHobby();
-
-
-
+        int choice = method.choice();
+        method.exercise(choice, name, town, age, hobby);
     }
+
+
 }
