@@ -34,7 +34,7 @@ private Scanner scanner = new Scanner(System.in);
 
     int  choice(){
         System.out.print("Введіть номер варіанту виведення.\n1)Табличний\n2)Текстовий" +
-                "\n3)Інший\n4)Разом всі 3 варіанти");
+                "\n3)Інший\n4)Разом всі 3 варіанти\nВаріант - ");
         test();
         return scanner.nextInt();
     }
@@ -57,20 +57,28 @@ private Scanner scanner = new Scanner(System.in);
                     }
                     else {
                         System.out.println("Такого варіанту не існує");
-                        choice();
                     }   }   }   }   }
 
 
     private void version1(String name,String town,int age,String hobby){
-
+        System.out.println("\nІм'я : "+name+"\nМісто : "+town+"\nВік : "+age+"\nХобі : "+hobby);
     }
+
     private void version2(String name,String town,int age,String hobby){
+        System.out.println("\nЛюдина з іменем "+name+" проживає в місті "+town+
+                "\nЦій людині "+age+" років і любить займатися "+hobby);
 
     }
+
     private void version3(String name,String town,int age,String hobby){
-
+        System.out.println("\n"+name+" - Ім'я \n"+town+" - Місто \n"+age+"   - Вік \n"+hobby+" - Хобі  ");
     }
+
     private void version4(String name,String town,int age,String hobby){
+        System.out.println("\nІм'я : "+name+"\nМісто : "+town+"\nВік : "+age+"\nХобі : "+hobby+"\n\n"+
+                "Людина з іменем "+name+" проживає в місті "+town+
+                "\nЦій людині "+age+" років і любить займатися "+hobby+"\n\n"+
+                name+" - Ім'я \n"+town+" - Місто\n"+age+"   - Вік\n"+hobby+" - Хобі");
 
     }
 }
